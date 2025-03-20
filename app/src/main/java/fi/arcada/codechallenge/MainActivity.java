@@ -1,6 +1,7 @@
 package fi.arcada.codechallenge;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -14,6 +15,10 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        TextView test = (TextView)findViewById(R.id.Hello);
+
+        test.setText("Hej denna app fungerar");
+
 
     }
 }
